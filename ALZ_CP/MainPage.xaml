@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ALZ_CP.MainPage"
+             Title="Menu">
+
+    <Grid>
+        <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround" VerticalOptions="CenterAndExpand" >
+            <Button x:Name="btn1" Text="Lotto 6/49" Clicked="btn1_Clicked" WidthRequest="250" HeightRequest="125" />
+            <Button x:Name="btn2" Text="Euro Jackpot" Clicked="btn2_Clicked" WidthRequest="250" HeightRequest="125" Background="gray" />
+        </FlexLayout>
+        <Button x:Name="quit_btn" Clicked="quit_btn_Clicked" Text="Quit" WidthRequest="100" HeightRequest="35" HorizontalOptions="Start" VerticalOptions="End" Margin="30,50" />
+        <Button x:Name="ws_btn" Clicked="ws_btn_Clicked" Text="My Website" WidthRequest="110" HeightRequest="35" HorizontalOptions="End" VerticalOptions="End" Margin="30,50"/>
+    </Grid>
+
+</ContentPage>
