@@ -4,13 +4,14 @@
              x:Class="ALZ_CP.MainPage"
              Title="Menu">
 
-    <Grid>
-        <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround" VerticalOptions="CenterAndExpand" >
-            <Button x:Name="btn1" Text="Lotto 6/49" Clicked="btn1_Clicked" WidthRequest="250" HeightRequest="125" />
-            <Button x:Name="btn2" Text="Euro Jackpot" Clicked="btn2_Clicked" WidthRequest="250" HeightRequest="125" Background="gray" />
+    <Grid BackgroundColor="#ff303030">
+        <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround" VerticalOptions="CenterAndExpand" Margin="0,-50,0,0" >
+            <Button FontSize="24" FontAutoScalingEnabled="True" FontAttributes="Bold" x:Name="btn1" Text="Lotto 6/49" Clicked="btn1_Clicked" WidthRequest="250" HeightRequest="125" Background="LightGray" />
+            <Button FontSize="24" FontAutoScalingEnabled="True" FontAttributes="Bold" x:Name="btn2" Text="Euro Jackpot" Clicked="btn2_Clicked" WidthRequest="250" HeightRequest="125" Background="LightGray" />
         </FlexLayout>
-        <Button x:Name="quit_btn" Clicked="quit_btn_Clicked" Text="Quit" WidthRequest="100" HeightRequest="35" HorizontalOptions="Start" VerticalOptions="End" Margin="30,50" />
-        <Button x:Name="ws_btn" Clicked="ws_btn_Clicked" Text="My Website" WidthRequest="110" HeightRequest="35" HorizontalOptions="End" VerticalOptions="End" Margin="30,50"/>
+        <Button Padding="0" FontSize="14" FontAutoScalingEnabled="True" FontAttributes="Bold" x:Name="quit_btn" Clicked="quit_btn_Clicked" Text="Quit" WidthRequest="100" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="End" Margin="30,35" />
+        <Button Padding="0" FontSize="14" FontAutoScalingEnabled="True" FontAttributes="Bold" x:Name="ws_btn" Clicked="ws_btn_Clicked" Text="My Website" WidthRequest="110" HeightRequest="40" HorizontalOptions="End" VerticalOptions="End" Margin="30,35"/>
+        <Label Text="© 2022 - ProgrammerLP" VerticalOptions="End" HorizontalOptions="Center" Margin="0,10" FontSize="13" FontAttributes="Bold" />
     </Grid>
 
 </ContentPage>

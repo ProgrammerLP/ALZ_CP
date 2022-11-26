@@ -1,4 +1,5 @@
-﻿namespace ALZ_CP;
+﻿
+namespace ALZ_CP;
 
 public static class MauiProgram
 {

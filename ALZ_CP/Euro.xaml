@@ -3,21 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ALZ_CP.Euro"
              Title="Euro Jackpot">
-    <Grid>
+    <Grid BackgroundColor="#ff303030">
 
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="1.45*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Text="Your Numbers" FontSize="42" FontAttributes="Bold" VerticalOptions="Center" Margin="20" HorizontalTextAlignment="Center" />
-        <Label x:Name="LBL_nb" Grid.Row="1" Text="1, 2, 3, 4, 5" FontSize="32" FontAttributes="Bold" VerticalOptions="Start" Margin="20,10" HorizontalTextAlignment="Center" />
-        <Label x:Name="LBL_en" Grid.Row="1" Text="Euronumbers: 9, 3" FontSize="24" FontAttributes="Bold" VerticalOptions="Center" Margin="20,10" HorizontalTextAlignment="Center" />
-        <HorizontalStackLayout Grid.Row="2" HeightRequest="40" HorizontalOptions="End" >
+        <Label Grid.Row="0" Text="Your Numbers" TextDecorations="Underline" FontSize="48" FontAttributes="Bold" VerticalOptions="Center" Margin="20" HorizontalTextAlignment="Center" />
+        <Label x:Name="LBL_nb" Grid.Row="1" Text="?, ?, ?, ?, ?" FontSize="36" FontAttributes="Bold" VerticalOptions="Start" Margin="20,10" HorizontalTextAlignment="Center" />
+        <Label x:Name="LBL_en" Grid.Row="1" Text="Euronumbers: ?, ?" FontSize="28" FontAttributes="Bold" VerticalOptions="Center" Margin="20,10" HorizontalTextAlignment="Center" />
+        <HorizontalStackLayout Grid.Row="2" HeightRequest="40" HorizontalOptions="End" Margin="0,0,20,10" >
             <Button Text="New Euronumbers" x:Name="ez_btn" Clicked="ez_btn_Clicked" />
-            <Button Text="New Numbers" Margin="10,0" x:Name="nb_btn" Clicked="nb_btn_Clicked" />
+            <Button Text="New Numbers" Margin="30,0,0,0" x:Name="nb_btn" Clicked="nb_btn_Clicked" />
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>

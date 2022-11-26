@@ -3,21 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ALZ_CP.lotto"
              Title="Lotto 6/49">
-    <Grid>
+    <Grid BackgroundColor="#ff303030">
 
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="1.45*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <Label Grid.Row="0" Text="Your Numbers" FontSize="42" FontAttributes="Bold" VerticalOptions="Center" Margin="20" HorizontalTextAlignment="Center" />
-        <Label Grid.Row="1" x:Name="LBL_nb" Text="1, 2, 3, 4, 5, 6" FontSize="32" FontAttributes="Bold" VerticalOptions="Start" Margin="20,10" HorizontalTextAlignment="Center" />
-        <Label x:Name="LBL_sz" Grid.Row="1" Text="Superzahl: 9" FontSize="24" FontAttributes="Bold" VerticalOptions="Center" Margin="20,10" HorizontalTextAlignment="Center" />
-        <HorizontalStackLayout Grid.Row="2" HeightRequest="40" HorizontalOptions="End" >
+        <Label Grid.Row="0" Text="Your Numbers" FontSize="48" TextDecorations="Underline" FontAttributes="Bold" VerticalOptions="Center" Margin="20" HorizontalTextAlignment="Center" />
+        <Label Grid.Row="1" x:Name="LBL_nb" Text="?, ?, ?, ?, ?, ?" FontSize="34" FontAttributes="Bold" VerticalOptions="Start" Margin="20,10" HorizontalTextAlignment="Center" />
+        <Label x:Name="LBL_sz" Grid.Row="1" Text="Superzahl: ?" FontSize="28" FontAttributes="Bold" VerticalOptions="CenterAndExpand" Margin="20,10" HorizontalTextAlignment="Center" />
+        <HorizontalStackLayout Grid.Row="2" HeightRequest="40" HorizontalOptions="End" Margin="0,0,2,10" >
             <Button Text="New Supernumber" x:Name="sz_btn" Clicked="sz_btn_Clicked" />
-            <Button Text="New Numbers" Margin="10,0" x:Name="nb_btn" Clicked="nb_btn_Clicked" />
+            <Button Text="New Numbers" Margin="30,0,0,0" x:Name="nb_btn" Clicked="nb_btn_Clicked" />
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>

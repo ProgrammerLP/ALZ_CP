@@ -5,4 +5,6 @@
     xmlns:maui="using:Microsoft.Maui"
     xmlns:local="using:ALZ_CP.WinUI">
 
+    
+    
 </maui:MauiWinUIApplication>

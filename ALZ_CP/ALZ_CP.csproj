@@ -15,7 +15,7 @@
 		<ApplicationTitle>AutoLotto</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.alz_cp</ApplicationId>
+		<ApplicationId>com.programmerlp.alz_cp</ApplicationId>
 		<ApplicationIdGuid>0CC1B2EE-D4CA-485C-B852-2BBED4437F17</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -34,7 +34,7 @@
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\logo.ico" />
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="White" />
+		<MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="#ff353535" BaseSize="411, 309" Resize="false" />
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 
@@ -68,7 +68,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="White" />
+	  <MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="#ff353535" BaseSize="411, 309" Resize="false" />
 	</ItemGroup>
 
 </Project>
